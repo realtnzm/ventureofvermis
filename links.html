@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <title>vermis</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/style-my-tooltips.css" />
+
+        <link
+            rel="shortcut icon"
+            href="assets/favicon2.png"
+            type="image/x-icon"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="scripts/jquery.style-my-tooltips.js"></script>
+        <script src="scripts/time.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://first-sound.moe/divaring/divaring.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://file.garden/ZrZSgsrYfQXsO7QH/ww/webmasterwebring.css"
+        />
+    </head>
+    <body>
+        <header>
+            <h1>Links & Credits</h1>
+            <h2 id="time">Time</h2>
+        </header>
+        <nav class="main">
+            <a href="#" classclass="currentPage">index</a>
+            <a href="/about.html">about</a>
+            <a href="blog.html">blog</a>
+            <a href="gallery.html">gallery</a>
+            <a href="links.html">links</a>
+        </nav>
+        <main>
+            <h2>Outlinks</h2>
+            <p>I can be found on</p>
+            <ul>
+                <li>
+                    <a href="https://instagram.com/realtnzm" target="_blank"
+                        >Instagram</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@realtnzm" target="_blank"
+                        >Tiktok (1st account)</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@faketnzm" target="_blank"
+                        >Tiktok (2nd account)</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://open.spotify.com/user/317obpkggn4rqsthlabjdqihdaee?si=2453fa51cc0c4479"
+                        target="_blank"
+                        >Spotify</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.last.fm/user/FluxAkh" target="_blank"
+                        >Last.fm</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.letterboxd.com/tanzeem" target="_blank"
+                        >Letterboxd</a
+                    >
+                </li>
+                <li>
+                    <a href="https://www.x.com/realtnzm" target="_blank"
+                        >Twitter/X</a
+                    >
+                </li>
+                <li>
+                    <a href="mailto:realtnzm@gmail.com">Email 1</a>
+                </li>
+                <li>
+                    <a href="mailto: fluxakh@gmail.com">Email 2</a>
+                </li>
+                <li>Discord: <b>@realtnzm</b></li>
+            </ul>
+        </main>
+        <footer>
+            vermis/realtnzm. <a href="sitemap.html">sitemap</a>. Established
+            2026.
+        </footer>
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <filter
+                id="BusinessAsUsual--Blue"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values="0 1 0 0 0
+               0 1 0 0 0
+               0 1 0 0 0
+               0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0 0.93" />
+                    <feFuncG type="table" tableValues="0.31 0.93" />
+                    <feFuncB type="table" tableValues="1 0.93" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+
+            <filter
+                id="BusinessAsUsual--Grey"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values=".33 .33 .33 0 0
+               .33 .33 .33 0 0
+               .33 .33 .33 0 0
+               0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0.12 0.78" />
+                    <feFuncG type="table" tableValues="0.12 0.78" />
+                    <feFuncB type="table" tableValues="0.12 0.78" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+        </svg>
+
+        <script src="scripts/biancarosa.js"></script>
+        <script src="scripts/siteButton.js"></script>
+        <script>
+            (function ($) {
+                $(document).ready(function () {
+                    $("[title]").style_my_tooltips();
+                });
+            })(jQuery);
+        </script>
+    </body>
+</html>

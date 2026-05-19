@@ -1,0 +1,413 @@
+@font-face {
+    font-family: "Xanh-Mono";
+    src: url(https://humantooth.neocities.org/fonts/XanhMono-Regular.woff)
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+    background: #004fff;
+    color: white;
+}
+
+::-moz-selection {
+    background: #004fff;
+    color: white;
+}
+
+/* #0805db  dablu
+   #00005A navy
+   #004FFF REAL BaU blue
+   the new white? #EDEDED
+*/
+
+html {
+    background: #f3f3f3;
+    color: #003ab6;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.875rem;
+
+    scrollbar-color: #0805db white;
+}
+
+body {
+    margin: 0 auto auto auto;
+    width: 45vw;
+    padding: 1rem 1rem 0 1rem;
+
+    display: grid;
+    gap: 0.5rem;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+
+    position: relative;
+    image-rendering: pixelated;
+
+    h1 {
+        font-family: "Xanh-Mono";
+        text-transform: uppercase;
+        filter: none;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        margin: 0;
+        color: white;
+        letter-spacing: -2px;
+
+        writing-mode: vertical-lr;
+
+        -webkit-text-stroke: 4px #004fff;
+        paint-order: stroke fill;
+    }
+
+    h2 {
+        position: absolute;
+        bottom: -0.75rem;
+        left: 0.5rem;
+
+        font-family: "Xanh-Mono";
+        color: #004fff;
+
+        -webkit-text-stroke: 4px white;
+        paint-order: stroke fill;
+    }
+}
+
+nav {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+
+    &.main {
+        a {
+            border-bottom: 2px solid #0805db;
+            padding: 0.25rem 1rem;
+            color: #0805db;
+            text-decoration: none;
+
+            &:visited {
+                border-bottom: #4f83f9;
+                color: #4f83f9;
+            }
+
+            &:hover,
+            &:active {
+                border-bottom: 2px solid #4f83f9;
+                background-color: #0805db;
+                color: white;
+            }
+
+            &.currentPage {
+                border: 2px solid #0805db;
+                color: #0805db;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    image-rendering: crisp-edges;
+    background: url(../assets/graphics/masa-dithered.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -23rem -15rem;
+    width: 45vw;
+    height: 10rem;
+    filter: url("#BusinessAsUsual--Blue");
+}
+
+.image-grid {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.fullwidth-image {
+    width: 100%;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+main {
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+
+    img {
+        filter: url("#BusinessAsUsual--Blue");
+    }
+
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+        color: white;
+        -webkit-text-stroke: 4px #004fff;
+        paint-order: stroke fill;
+        font-style: italic;
+        font-size: 3em;
+        margin: 0.5rem 0;
+    }
+
+    h2 {
+        padding-left: 2%;
+        color: white;
+        background: #003ab6;
+        background: linear-gradient(
+            90deg,
+            #004fff 30%,
+            rgba(245, 245, 245, 0) 75%
+        );
+        margin: 0.5rem 0;
+        padding: 0.25rem 0.25rem 0.25rem 1rem;
+    }
+
+    h3 {
+        margin: 0.25rem 0;
+    }
+
+    details {
+        > p {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+        }
+    }
+}
+
+.collectives,
+.updates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem;
+    width: 100%;
+}
+
+.updates {
+    text-align: left;
+}
+
+.wm-updates {
+    h2 {
+        background: linear-gradient(
+            90deg,
+            #004fff 30%,
+            rgba(245, 245, 245, 0) 55%
+        );
+    }
+    position: relative;
+
+    dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 1.25rem;
+        width: 60%;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        z-index: -1;
+
+        width: 10rem;
+        height: 100%;
+
+        background: url("/assets/graphics/updates.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        filter: url("#BusinessAsUsual--Blue");
+    }
+}
+
+.collectives {
+    height: 15rem;
+}
+
+.webringList {
+    border: 2px dashed #004fff;
+    overflow: auto;
+
+    display: grid;
+    background: #f3f3f3;
+    padding: 0.5rem 0;
+}
+
+.neighbourList,
+.fanList {
+    border: 2px dashed #004fff;
+    overflow: auto;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #f3f3f3;
+
+    img {
+        &:hover,
+        &:active,
+        &:focus {
+            filter: none;
+        }
+    }
+}
+
+.neighbourList {
+    overflow: auto;
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(auto-fill, minmax(31px, 88px));
+}
+
+.fanList {
+    height: 4rem;
+    overflow: auto;
+    grid-template-columns: repeat(auto-fit, minmax(0, 50px));
+}
+
+section {
+    &.button-section {
+        display: grid;
+        place-items: center;
+
+        p {
+            margin: 0 auto;
+        }
+
+        img {
+            cursor: pointer;
+
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+}
+
+strong {
+    color: #004fff;
+}
+
+footer {
+    background-color: #004fff;
+    color: #ededed;
+    text-align: center;
+    padding: 0.3rem 0;
+
+    a {
+        color: #ededed;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        height: 10rem;
+    }
+
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+
+        background: url(../assets/graphics/masa-dithered.png);
+        background-repeat: no-repeat;
+        background-position: -35rem -15rem;
+        width: 100vw;
+        height: 10rem;
+        filter: url("#BusinessAsUsual--Blue");
+    }
+
+    .wm-updates {
+        h2 {
+            background: #004fff;
+        }
+
+        dd {
+            width: 90%;
+        }
+    }
+
+    .wm-updates::before {
+        display: none;
+    }
+
+    nav {
+        padding: 0 0.25rem;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.5rem;
+        justify-content: space-evenly;
+
+        text-align: center;
+
+        &.sitemap {
+            justify-content: left;
+        }
+    }
+
+    main {
+        padding: 1rem;
+
+        h2 {
+            background: #004fff;
+        }
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .collectives {
+        display: grid;
+    }
+
+    .webringList {
+        width: 100%;
+        grid-column-start: span 2;
+    }
+
+    .fanList {
+        grid-row: 2;
+        height: auto;
+    }
+
+    .neighbourList {
+        grid-row: 2;
+    }
+}

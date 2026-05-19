@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blog Post</title>
+        <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+        <link rel="icon" href="./../assets/favicon.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link
+            href="../styles/blog.css"
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>tnzm's blog post</h1>
+            </header>
+            <div id="header">...</div>
+            <div id="container">
+                <div id="content">
+                    <h1 id="postTitleH1"></h1>
+                    <h4 id="postDate"></h4>
+                    <p class="warning">
+                        Terrified of being known, terrified of being unknown.
+                    </p>
+                    <p>
+                        Sometimes, I let myself be known too well. I spill the
+                        details of my life as if they are harmless facts
+                        ---stories, memories, wounds dressed up as anecdotes. I
+                        speak freely, almost eagerly, believing that being
+                        understood is the same as being safe. Yet midway through
+                        my confession, I stop. The words dry up, my tongue turns
+                        heavy, and silence rushes in. It is not because I have
+                        nothing more to say, but because I suddenly remember who
+                        I'm conversing with: a phantom, a temporary presence,
+                        someone who may soon fade into irrelevance in my life.
+                    </p>
+                    <p>
+                        This fear is a quiet contradiction I live with daily. I
+                        am terrified of being unknown --of drifting through
+                        relationships unseen, unheard, reduced to a
+                        surface-level existence. To be unknown feels like
+                        erasure, like screaming into a void where no echo
+                        returns. If no one truly knows me, do I fully exist?
+                        This fear pushes me to open up, to offer pieces of
+                        myself too quickly, to make myself familiar in hopes of
+                        becoming unforgettable.
+                    </p>
+                    <p>And yet, I am equally terrified of being known.</p>
+                    <p>
+                        To be known is to be exposed. It means allowing someone
+                        access to my softest truths, the parts of me that are
+                        unfinished, unpolished, and uncertain. Once spoken,
+                        these truths no longer belong solely to me. They live in
+                        someone else’s memory, subject to misinterpretation.
+                        What frightens me most is not vulnerability itself, but
+                        the possibility that my vulnerability will outlast the
+                        relationship it was offered to.
+                    </p>
+                    <p>
+                        There is something haunting about giving someone the map
+                        to your inner world when they may soon leave the
+                        territory altogether. They become ghosts who know too
+                        much --phantoms carrying fragments of your story with no
+                        obligation to cherish them. The idea that someone
+                        unimportant could hold something so intimate feels like
+                        a quiet betrayal of the self. So I stop speaking. I
+                        retreat. I swallow my words whole, choosing mystery over
+                        regret.
+                    </p>
+                    <p>
+                        This tension traps me in an emotional limbo. I oscillate
+                        between oversharing and silence, between craving
+                        connection and fearing its consequences. I want to be
+                        deeply seen, but only by those who will stay. I want to
+                        be remembered, but not by those who will forget me
+                        carelessly. I want intimacy with permanence,
+                        understanding without expiration.
+                    </p>
+                    <p>
+                        Perhaps this fear reveals a deeper truth: I do not just
+                        fear being known or unknown—I fear impermanence. I fear
+                        that relationships, like moments, are fleeting, while
+                        the parts of myself I give away feel permanent. Until I
+                        learn how to sit with that impermanence, I will continue
+                        to pause mid-sentence, weighing every word, asking
+                        myself whether this listener has earned the right to
+                        know me.
+                    </p>
+                    <p>
+                        In the end, I exist between two fears, both equally
+                        loud. To be unknown is lonely. To be known is dangerous.
+                        And somewhere between silence and confession, I am still
+                        learning how to protect myself without disappearing.
+                    </p>
+                    <!--Add h3 titles -->
+                    <div id="nextprev"></div>
+                </div>
+                <!-- end of div id="content" -->
+                <div id="footer"></div>
+            </div>
+            <!-- end of div id="container" -->
+        </div>
+        <!-- Here's the link to our JavaScript! -->
+        <script src="../scripts/blog-script.js"></script>
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <filter
+                id="BusinessAsUsual--Blue"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values="0 1 0 0 0
+            0 1 0 0 0
+            0 1 0 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0 0.93" />
+                    <feFuncG type="table" tableValues="0.31 0.93" />
+                    <feFuncB type="table" tableValues="1 0.93" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+
+            <filter
+                id="BusinessAsUsual--Grey"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values=".33 .33 .33 0 0
+            .33 .33 .33 0 0
+            .33 .33 .33 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0.12 0.78" />
+                    <feFuncG type="table" tableValues="0.12 0.78" />
+                    <feFuncB type="table" tableValues="0.12 0.78" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blog Post</title>
+        <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+        <link rel="icon" href="./../assets/favicon.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link
+            href="../styles/blog.css"
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>tnzm's blog post</h1>
+            </header>
+            <div id="header">...</div>
+            <div id="container">
+                <div id="content">
+                    <h1 id="postTitleH1"></h1>
+                    <h4 id="postDate"></h4>
+                    <p>
+                        The hardest truth I think I'll ever discover is taht
+                        life doesn't stop for anyone or anything. Not for greif,
+                        not for nostalgia, not even for the moments that feel so
+                        massive, no annihilating, that surely the sky itself
+                        should split open to bear witness.
+                    </p>
+                    <p>
+                        I could lose everything i thought i couldn't live
+                        without. A person, a dream, or maybe a version of myself
+                        that once felt eternal. Somewhere, not far from where I
+                        am breaking, a stranger will be falling in love for the
+                        very first time, a child wwill be laughing so ard they
+                        can barely breathe, a gorcery store ill be restocking
+                        its shelves with quiet, ordinary insistence, as if the
+                        world hasn't shifted at all.
+                    </p>
+                    <p>
+                        It feels cruel sometimes, the way life keeps moving
+                        forward, indifferent to whether or not I am able to move
+                        with it, the way hours and days and years continue to
+                        spill out across the floor of my life even when I have
+                        nothing left inside me to meet them.
+                    </p>
+                    <p>
+                        Maybe I expect, deep down, that the world should atleast
+                        slow down out of respect to my loss, that time should
+                        pause, that the noise and the brightness and the absurd
+                        rhythm of daily life should hush itself. But it doesnt,
+                        and it won't and it never has.
+                    </p>
+                    <p>
+                        The sun still shines on mornings that feel inhabitable.
+                        There is no great cosmic stillness reserved for my
+                        private sorrows.
+                    </p>
+                    <p>
+                        There is only this life, humming and pulsing and surging
+                        forward, as thoughtlessly as blood through a body that
+                        does not know how to stop beating.
+                    </p>
+                    <!--Add h3 titles -->
+                    <div id="nextprev"></div>
+                </div>
+                <!-- end of div id="content" -->
+                <div id="footer"></div>
+            </div>
+            <!-- end of div id="container" -->
+        </div>
+        <!-- Here's the link to our JavaScript! -->
+        <script src="../scripts/blog-script.js"></script>
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <filter
+                id="BusinessAsUsual--Blue"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values="0 1 0 0 0
+            0 1 0 0 0
+            0 1 0 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0 0.93" />
+                    <feFuncG type="table" tableValues="0.31 0.93" />
+                    <feFuncB type="table" tableValues="1 0.93" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+
+            <filter
+                id="BusinessAsUsual--Grey"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values=".33 .33 .33 0 0
+            .33 .33 .33 0 0
+            .33 .33 .33 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0.12 0.78" />
+                    <feFuncG type="table" tableValues="0.12 0.78" />
+                    <feFuncB type="table" tableValues="0.12 0.78" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+        </svg>
+    </body>
+</html>

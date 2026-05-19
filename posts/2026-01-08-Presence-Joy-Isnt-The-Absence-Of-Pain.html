@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Blog Post</title>
+        <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+        <link rel="icon" href="./../assets/favicon.png" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link
+            href="../styles/blog.css"
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+        />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>tnzm's blog post</h1>
+            </header>
+            <div id="header">...</div>
+            <div id="container">
+                <div id="content">
+                    <h1 id="postTitleH1"></h1>
+                    <h4 id="postDate"></h4>
+                    <p>
+                        Presence of joy isn't the absence of pain. It's the
+                        acceptance of it. I feel like a lot us look at things in
+                        black and white. We like to look at things as opposites
+                        when they are really not. Its all spectrums and balance.
+                        Without joy there's no pain and without pain there's no
+                        joy --Because you'd have nothing to compare the joy or
+                        the pain to. If you could make a conscious decision to
+                        prevent something bad you'd obviously choose to, even if
+                        the bad thing happening would prove to be inconvenient
+                        for you. This is what I mean by spectrum and balance.
+                    </p>
+                    <p>
+                        We go through suffering because we will be able to
+                        experience joy and that joy will come around eventually.
+                    </p>
+                    <p>
+                        I think a beautiful part of happiness is accepting that
+                        the thing that gives you the most happiness could give
+                        you the most pain, and accepting that fact nonetheless,
+                        because in the end that source of happiness won’t go
+                        away even after tremendous pain. You will always have
+                        that source.
+                    </p>
+                    <p>
+                        But doesn't this insinuate that a universe full of all
+                        evil and another full of nothing (evil or good) would be
+                        equal because they both have no good or joy? I think
+                        that bad things only boost how people feel about it. Joy
+                        nor sadness is reliant on the other one to exist.
+                    </p>
+                    <!--Add h3 titles -->
+                    <div id="nextprev"></div>
+                </div>
+                <!-- end of div id="content" -->
+                <div id="footer"></div>
+            </div>
+            <!-- end of div id="container" -->
+        </div>
+        <!-- Here's the link to our JavaScript! -->
+        <script src="../scripts/blog-script.js"></script>
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <filter
+                id="BusinessAsUsual--Blue"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values="0 1 0 0 0
+            0 1 0 0 0
+            0 1 0 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0 0.93" />
+                    <feFuncG type="table" tableValues="0.31 0.93" />
+                    <feFuncB type="table" tableValues="1 0.93" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+
+            <filter
+                id="BusinessAsUsual--Grey"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values=".33 .33 .33 0 0
+            .33 .33 .33 0 0
+            .33 .33 .33 0 0
+            0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0.12 0.78" />
+                    <feFuncG type="table" tableValues="0.12 0.78" />
+                    <feFuncB type="table" tableValues="0.12 0.78" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+        </svg>
+    </body>
+</html>

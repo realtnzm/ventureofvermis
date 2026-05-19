@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+    <head lang="en">
+        <title>vermis</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="styles/blog.css"
+            type="text/css"
+            media="all"
+        />
+
+        <link
+            rel="shortcut icon"
+            href="assets/favicon2.png"
+            type="image/x-icon"
+        />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="scripts/jquery.style-my-tooltips.js"></script>
+        <script src="scripts/time.js"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://first-sound.moe/divaring/divaring.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://file.garden/ZrZSgsrYfQXsO7QH/ww/webmasterwebring.css"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>tnzm's Blog</h1>
+            </header>
+            <div id="header">...</div>
+            <div id="container">
+                <div id="content">
+                    <h2>Where tnzm <i>actually</i> talks</h2>
+                    <p>
+                        To tell you the truth, I'm ashamed of having my writings
+                        out for people to see. I'm scared of being
+                        misinterpreted and it doesn't help that it's hard to
+                        convey what I <i>really</i> want to say. Not really, but
+                        you know... language barriers and all that.
+                        Neeeeevertheless, I'll keep on posting. However cringey
+                        it may be.
+                    </p>
+                    <div id="recentpostlistdiv"></div>
+                </div>
+                <!-- end of div id="content" -->
+                <div id="footer"></div>
+            </div>
+            <!-- end of div id="container" -->
+        </div>
+
+        <!-- Here's the link to our JavaScript! -->
+        <script src="scripts/blog-script.js"></script>
+
+        <svg xmlns="http://www.w3.org/2000/svg" height="0" width="0">
+            <filter
+                id="BusinessAsUsual--Blue"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values="0 1 0 0 0
+                0 1 0 0 0
+                0 1 0 0 0
+                0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0 0.93" />
+                    <feFuncG type="table" tableValues="0.31 0.93" />
+                    <feFuncB type="table" tableValues="1 0.93" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+
+            <filter
+                id="BusinessAsUsual--Grey"
+                x="-10%"
+                y="-10%"
+                width="120%"
+                height="120%"
+                filterUnits="objectBoundingBox"
+                primitiveUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+            >
+                <feColorMatrix
+                    type="matrix"
+                    values=".33 .33 .33 0 0
+                .33 .33 .33 0 0
+                .33 .33 .33 0 0
+                0 0 0 1 0"
+                    in="SourceGraphic"
+                    result="colormatrix"
+                />
+                <feComponentTransfer
+                    in="colormatrix"
+                    result="componentTransfer"
+                >
+                    <feFuncR type="table" tableValues="0.12 0.78" />
+                    <feFuncG type="table" tableValues="0.12 0.78" />
+                    <feFuncB type="table" tableValues="0.12 0.78" />
+                    <feFuncA type="table" tableValues="0 1" />
+                </feComponentTransfer>
+                <feBlend
+                    mode="normal"
+                    in="componentTransfer"
+                    in2="SourceGraphic"
+                    result="blend"
+                />
+            </filter>
+        </svg>
+    </body>
+</html>
