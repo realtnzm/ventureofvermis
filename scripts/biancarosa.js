@@ -1,6 +1,5 @@
 let user = "fluxakh";
-let link =
-  "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
+let link = "https://lastfm-last-played.biancarosa.com.br/fluxakh/latest-song";
 let song = document.querySelector("#song");
 fetch(link)
   .then(function (response) {
