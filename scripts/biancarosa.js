@@ -1,4 +1,4 @@
-let user = "jyungi";
+let user = "fluxakh";
 let link =
   "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
 let song = document.querySelector("#song");
