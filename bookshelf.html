@@ -1,47 +1,2592 @@
 <!doctype html>
-<head lang="en">
-    <title>vermis</title>
-    <meta
-        property="og:image"
-        content="https://realtnzm.github.io/ventureofvermis/"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:title" content="Venture of Vermis" />
-    <meta property="og:description" content="tnzm's mesite" />
-    <meta property="og:image" content="assets/thumbnail.png" />
+<html lang="en" data-astro-cid-sckkx6r4>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vermis</title>
+        <script>
+            (() => {
+                const root = document.documentElement;
+                const mediaQuery = window.matchMedia(
+                    "(prefers-color-scheme: dark)",
+                );
+                const userAgent = navigator.userAgent || "";
+                const userAgentDataPlatform =
+                    navigator.userAgentData?.platform || "";
+                const platform = navigator.platform || "";
+                const normalizedPlatform =
+                    `${userAgentDataPlatform} ${platform} ${userAgent}`.toLowerCase();
+                const detectedPlatform = /(mac|iphone|ipad|ipod|ios)/.test(
+                    normalizedPlatform,
+                )
+                    ? "apple"
+                    : "non-apple";
+                const maybePreloadPlatformFont = () => {
+                    if (detectedPlatform !== "non-apple") return;
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/style-my-tooltips.css" />
+                    const link = document.createElement("link");
+                    link.rel = "preload";
+                    link.href = "/assets/Material/SFPro.woff2";
+                    link.as = "font";
+                    link.type = "font/woff2";
+                    link.crossOrigin = "";
+                    document.head.append(link);
+                };
+                const setSystemTheme = () => {
+                    root.dataset.theme = mediaQuery.matches ? "dark" : "light";
+                };
+                root.dataset.platform = detectedPlatform;
+                maybePreloadPlatformFont();
+                setSystemTheme();
 
-    <link rel="shortcut icon" href="assets/favicon2.png" type="image/x-icon" />
+                if (typeof mediaQuery.addEventListener === "function") {
+                    mediaQuery.addEventListener("change", setSystemTheme);
+                } else {
+                    mediaQuery.addListener(setSystemTheme);
+                }
+            })();
+        </script>
+        <link
+            rel="shortcut icon"
+            href="assets/favicon2.png"
+            type="image/x-icon"
+        />
+        <meta
+            property="og:image"
+            content="https://realtnzm.github.io/ventureofvermis/"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:title" content="Venture of Vermis" />
+        <meta property="og:description" content="tnzm's mesite" />
+        <meta property="og:image" content="assets/thumbnail.png" />
+        <link
+            rel="preload"
+            as="image"
+            href="/assets/Material/Workpreviews/1.webp"
+            type="image/webp"
+            fetchpriority="high"
+        />
+        <link rel="stylesheet" href="/_astro/Layout.DqDsFER-.css" />
+        <link rel="stylesheet" href="/_astro/index.C1rzjvU3.css" />
+    </head>
+    <body data-astro-cid-sckkx6r4>
+        <div class="page" data-astro-cid-j7pv25f6>
+            <div class="holder" data-astro-cid-j7pv25f6>
+                <!-- Hero Section -->
+                <div class="hero" data-astro-cid-j7pv25f6>
+                    <div class="logo" data-astro-cid-j7pv25f6></div>
+                    <div class="hero-copy" data-astro-cid-j7pv25f6>
+                        <p
+                            class="body-text hero-copy-line"
+                            data-astro-cid-j7pv25f6
+                        >
+                            <span
+                                class="stack-shell-inner"
+                                data-astro-cid-j7pv25f6
+                            >
+                                I love reading books bc you get to listen to
+                                music while you read. I haven't read that many
+                                books tho.
+                            </span>
+                        </p>
+                        <p
+                            class="body-text hero-copy-line"
+                            data-astro-cid-j7pv25f6
+                        >
+                            <span
+                                class="stack-shell-inner"
+                                data-astro-cid-j7pv25f6
+                            >
+                                <span
+                                    class="hero-keep-together"
+                                    data-astro-cid-j7pv25f6
+                                    >I find anime really boring, so I read mangas a LOTTTTTTTTT.
+                        </p>
+                    </div>
+                </div>
+                <!-- Bookshelf Section -->
+                <div class="section" data-astro-cid-j7pv25f6>
+                    <p class="title-section" data-astro-cid-j7pv25f6>
+                        bookshelf
+                    </p>
+                    <div
+                        class="books-shell"
+                        style="min-height: 260px"
+                        data-astro-cid-j7pv25f6
+                    >
+                        <div
+                            class="books-viewport"
+                            id="bookshelf-viewport"
+                            style="min-height: 260px"
+                            data-astro-cid-j7pv25f6
+                        >
+                            <div
+                                class="books"
+                                id="bookshelf"
+                                data-initial-open-index="0"
+                                style="min-height: 260px"
+                                data-astro-cid-j7pv25f6
+                            >
+                                <div
+                                    class="book open"
+                                    data-tilt="0"
+                                    data-cover-width="208"
+                                    data-spine-width="21"
+                                    data-book-url="/book/identity-designed"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 208px;
+                                        height: 260px;
+                                        z-index: 2;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 208px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(0px)
+                                                rotate(0deg) rotateY(0deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 208px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(21px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Identity%20Designed/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Identity%20Designed/cover-260.webp 1x,
+                                                /assets/Books/Identity%20Designed/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Identity%20Designed/cover-260.webp"
+                                            data-srcset="/assets/Books/Identity%20Designed/cover-260.webp 1x, /assets/Books/Identity%20Designed/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="208"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 208px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(21px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 208px;
+                                                height: 260px;
+                                                transform: translateZ(21px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 21px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Identity%20Designed/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Identity%20Designed/spine-260.webp 1x,
+                                                /assets/Books/Identity%20Designed/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Identity%20Designed/spine-260.webp"
+                                            data-srcset="/assets/Books/Identity%20Designed/spine-260.webp 1x, /assets/Books/Identity%20Designed/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="21"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 21px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="0.65"
+                                    data-cover-width="251"
+                                    data-spine-width="28"
+                                    data-book-url="/book/how-to-use-graphic-design-to-sell-things-explain-things-make-things-look-better-make-people-laugh-make-people-cry-and-every-once-in-a-while-change-the-world"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 38.02341140876479px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 251px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    5.022156611017024px
+                                                )
+                                                rotate(2.214deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 251px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(28px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/How%20to%20Use%20Graphic%20Design/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/How%20to%20Use%20Graphic%20Design/cover-260.webp 1x,
+                                                /assets/Books/How%20to%20Use%20Graphic%20Design/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/How%20to%20Use%20Graphic%20Design/cover-260.webp"
+                                            data-srcset="/assets/Books/How%20to%20Use%20Graphic%20Design/cover-260.webp 1x, /assets/Books/How%20to%20Use%20Graphic%20Design/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="251"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 251px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(28px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 251px;
+                                                height: 260px;
+                                                transform: translateZ(28px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 28px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/How%20to%20Use%20Graphic%20Design/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/How%20to%20Use%20Graphic%20Design/spine-260.webp 1x,
+                                                /assets/Books/How%20to%20Use%20Graphic%20Design/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/How%20to%20Use%20Graphic%20Design/spine-260.webp"
+                                            data-srcset="/assets/Books/How%20to%20Use%20Graphic%20Design/spine-260.webp 1x, /assets/Books/How%20to%20Use%20Graphic%20Design/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="28"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 28px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="0.9"
+                                    data-cover-width="220"
+                                    data-spine-width="26"
+                                    data-book-url="/book/virgil-abloh-x-nike-icons"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 35.77193870399726px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 220px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    4.895189112323025px
+                                                )
+                                                rotate(2.1580000000000004deg)
+                                                rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(26px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-260.webp 1x,
+                                                /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-260.webp"
+                                            data-srcset="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-260.webp 1x, /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="220"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(26px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements light"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                transform: translateZ(26px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 26px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-260.webp 1x,
+                                                /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-260.webp"
+                                            data-srcset="/assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-260.webp 1x, /assets/Books/Virgil%20Abloh%20x%20Nike%20ICONS/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="26"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 26px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="1.15"
+                                    data-cover-width="172"
+                                    data-spine-width="45"
+                                    data-book-status="not-started"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 54.41603078272865px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 172px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    4.722868621819934px
+                                                )
+                                                rotate(2.082deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 172px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(45px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/The%20Creative%20Act/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/The%20Creative%20Act/cover-260.webp 1x,
+                                                /assets/Books/The%20Creative%20Act/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/The%20Creative%20Act/cover-260.webp"
+                                            data-srcset="/assets/Books/The%20Creative%20Act/cover-260.webp 1x, /assets/Books/The%20Creative%20Act/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="172"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 172px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(45px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements light"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 172px;
+                                                height: 260px;
+                                                transform: translateZ(45px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 45px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/The%20Creative%20Act/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/The%20Creative%20Act/spine-260.webp 1x,
+                                                /assets/Books/The%20Creative%20Act/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/The%20Creative%20Act/spine-260.webp"
+                                            data-srcset="/assets/Books/The%20Creative%20Act/spine-260.webp 1x, /assets/Books/The%20Creative%20Act/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="45"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 45px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="0.85"
+                                    data-cover-width="215"
+                                    data-spine-width="21"
+                                    data-book-status="not-started"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 27.90744890319443px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 215px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    3.4574385924297912px
+                                                )
+                                                rotate(1.524deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 215px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(21px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Thinking%20with%20Type/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Thinking%20with%20Type/cover-260.webp 1x,
+                                                /assets/Books/Thinking%20with%20Type/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Thinking%20with%20Type/cover-260.webp"
+                                            data-srcset="/assets/Books/Thinking%20with%20Type/cover-260.webp 1x, /assets/Books/Thinking%20with%20Type/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="215"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 215px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(21px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 215px;
+                                                height: 260px;
+                                                transform: translateZ(21px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 21px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Thinking%20with%20Type/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Thinking%20with%20Type/spine-260.webp 1x,
+                                                /assets/Books/Thinking%20with%20Type/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Thinking%20with%20Type/spine-260.webp"
+                                            data-srcset="/assets/Books/Thinking%20with%20Type/spine-260.webp 1x, /assets/Books/Thinking%20with%20Type/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="21"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 21px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="1"
+                                    data-cover-width="222"
+                                    data-spine-width="24"
+                                    data-book-status="not-started"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 30.118877181970667px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 222px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    3.06276942836932px
+                                                )
+                                                rotate(1.35deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 222px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(24px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Universal%20Principles/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Universal%20Principles/cover-260.webp 1x,
+                                                /assets/Books/Universal%20Principles/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Universal%20Principles/cover-260.webp"
+                                            data-srcset="/assets/Books/Universal%20Principles/cover-260.webp 1x, /assets/Books/Universal%20Principles/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="222"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 222px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(24px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 222px;
+                                                height: 260px;
+                                                transform: translateZ(24px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 24px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Universal%20Principles/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Universal%20Principles/spine-260.webp 1x,
+                                                /assets/Books/Universal%20Principles/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Universal%20Principles/spine-260.webp"
+                                            data-srcset="/assets/Books/Universal%20Principles/spine-260.webp 1x, /assets/Books/Universal%20Principles/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="24"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 24px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="1.3"
+                                    data-cover-width="169"
+                                    data-spine-width="18"
+                                    data-book-status="not-started"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 23.794421604190592px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 169px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    2.899449579682367px
+                                                )
+                                                rotate(1.278deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 169px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(18px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Blitzed/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Blitzed/cover-260.webp 1x,
+                                                /assets/Books/Blitzed/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Blitzed/cover-260.webp"
+                                            data-srcset="/assets/Books/Blitzed/cover-260.webp 1x, /assets/Books/Blitzed/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="169"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 169px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(18px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements light"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 169px;
+                                                height: 260px;
+                                                transform: translateZ(18px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 18px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine light"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Blitzed/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Blitzed/spine-260.webp 1x,
+                                                /assets/Books/Blitzed/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Blitzed/spine-260.webp"
+                                            data-srcset="/assets/Books/Blitzed/spine-260.webp 1x, /assets/Books/Blitzed/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="18"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 18px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book"
+                                    data-tilt="1.55"
+                                    data-cover-width="168"
+                                    data-spine-width="18"
+                                    data-book-status="reading"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 23.196435892550173px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 168px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: left center;
+                                            transform: translateX(
+                                                    2.600018151448983px
+                                                )
+                                                rotate(1.146deg) rotateY(90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 168px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(18px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/22%20Cells%20in%20Nuremberg/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/22%20Cells%20in%20Nuremberg/cover-260.webp 1x,
+                                                /assets/Books/22%20Cells%20in%20Nuremberg/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/22%20Cells%20in%20Nuremberg/cover-260.webp"
+                                            data-srcset="/assets/Books/22%20Cells%20in%20Nuremberg/cover-260.webp 1x, /assets/Books/22%20Cells%20in%20Nuremberg/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="168"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 168px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(18px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 168px;
+                                                height: 260px;
+                                                transform: translateZ(18px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 18px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/22%20Cells%20in%20Nuremberg/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/22%20Cells%20in%20Nuremberg/spine-260.webp 1x,
+                                                /assets/Books/22%20Cells%20in%20Nuremberg/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/22%20Cells%20in%20Nuremberg/spine-260.webp"
+                                            data-srcset="/assets/Books/22%20Cells%20in%20Nuremberg/spine-260.webp 1x, /assets/Books/22%20Cells%20in%20Nuremberg/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="18"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 18px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: left center;
+                                                transform: rotateY(-90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="0.7"
+                                    data-cover-width="220"
+                                    data-spine-width="25"
+                                    data-book-url="/book/sidooh"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 27.22260813511599px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 220px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -193.8891530461715px
+                                                )
+                                                rotate(0.48999999999999994deg)
+                                                rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(25px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Sidooh/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Sidooh/cover-260.webp 1x,
+                                                /assets/Books/Sidooh/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Sidooh/cover-260.webp"
+                                            data-srcset="/assets/Books/Sidooh/cover-260.webp 1x, /assets/Books/Sidooh/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="220"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(25px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 220px;
+                                                height: 260px;
+                                                transform: translateZ(25px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 25px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Sidooh/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Sidooh/spine-260.webp 1x,
+                                                /assets/Books/Sidooh/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Sidooh/spine-260.webp"
+                                            data-srcset="/assets/Books/Sidooh/spine-260.webp 1x, /assets/Books/Sidooh/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="25"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 25px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="0.9"
+                                    data-cover-width="173"
+                                    data-spine-width="22"
+                                    data-book-url="/book/jujutsu-kaisen"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 24.857461792242987px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 173px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -149.57193406177538px
+                                                )
+                                                rotate(0.63deg) rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(22px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Jujutsu%20Kaisen/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Jujutsu%20Kaisen/cover-260.webp 1x,
+                                                /assets/Books/Jujutsu%20Kaisen/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Jujutsu%20Kaisen/cover-260.webp"
+                                            data-srcset="/assets/Books/Jujutsu%20Kaisen/cover-260.webp 1x, /assets/Books/Jujutsu%20Kaisen/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="173"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(22px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                transform: translateZ(22px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 22px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Jujutsu%20Kaisen/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Jujutsu%20Kaisen/spine-260.webp 1x,
+                                                /assets/Books/Jujutsu%20Kaisen/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Jujutsu%20Kaisen/spine-260.webp"
+                                            data-srcset="/assets/Books/Jujutsu%20Kaisen/spine-260.webp 1x, /assets/Books/Jujutsu%20Kaisen/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="22"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 22px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="0.8"
+                                    data-cover-width="184"
+                                    data-spine-width="22"
+                                    data-book-url="/book/the-climber"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 24.540108131918572px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 184px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -160.73047133398381px
+                                                )
+                                                rotate(0.5599999999999999deg)
+                                                rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 184px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(22px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/The%20Climber/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/The%20Climber/cover-260.webp 1x,
+                                                /assets/Books/The%20Climber/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/The%20Climber/cover-260.webp"
+                                            data-srcset="/assets/Books/The%20Climber/cover-260.webp 1x, /assets/Books/The%20Climber/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="184"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 184px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(22px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 184px;
+                                                height: 260px;
+                                                transform: translateZ(22px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 22px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/The%20Climber/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/The%20Climber/spine-260.webp 1x,
+                                                /assets/Books/The%20Climber/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/The%20Climber/spine-260.webp"
+                                            data-srcset="/assets/Books/The%20Climber/spine-260.webp 1x, /assets/Books/The%20Climber/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="22"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 22px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="1.4"
+                                    data-cover-width="173"
+                                    data-spine-width="19"
+                                    data-book-url="/book/chainsaw-man"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 23.44410290007599px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 173px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -151.779338150291px
+                                                )
+                                                rotate(0.9799999999999999deg)
+                                                rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(19px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Chainsaw%20Man/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Chainsaw%20Man/cover-260.webp 1x,
+                                                /assets/Books/Chainsaw%20Man/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Chainsaw%20Man/cover-260.webp"
+                                            data-srcset="/assets/Books/Chainsaw%20Man/cover-260.webp 1x, /assets/Books/Chainsaw%20Man/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="173"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(19px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 173px;
+                                                height: 260px;
+                                                transform: translateZ(19px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 19px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Chainsaw%20Man/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Chainsaw%20Man/spine-260.webp 1x,
+                                                /assets/Books/Chainsaw%20Man/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Chainsaw%20Man/spine-260.webp"
+                                            data-srcset="/assets/Books/Chainsaw%20Man/spine-260.webp 1x, /assets/Books/Chainsaw%20Man/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="19"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 19px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="0.85"
+                                    data-cover-width="165"
+                                    data-spine-width="28"
+                                    data-book-url="/book/alice-in-borderland"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 30.69846604669695px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 165px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -135.6515218651417px
+                                                )
+                                                rotate(0.595deg) rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 165px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(28px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Alice%20in%20Borderland/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Alice%20in%20Borderland/cover-260.webp 1x,
+                                                /assets/Books/Alice%20in%20Borderland/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Alice%20in%20Borderland/cover-260.webp"
+                                            data-srcset="/assets/Books/Alice%20in%20Borderland/cover-260.webp 1x, /assets/Books/Alice%20in%20Borderland/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="165"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 165px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(28px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 165px;
+                                                height: 260px;
+                                                transform: translateZ(28px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 28px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Alice%20in%20Borderland/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Alice%20in%20Borderland/spine-260.webp 1x,
+                                                /assets/Books/Alice%20in%20Borderland/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Alice%20in%20Borderland/spine-260.webp"
+                                            data-srcset="/assets/Books/Alice%20in%20Borderland/spine-260.webp 1x, /assets/Books/Alice%20in%20Borderland/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="28"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 28px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="1.1"
+                                    data-cover-width="174"
+                                    data-spine-width="34"
+                                    data-book-status="reading"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 37.49097370093793px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 174px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -138.2560482916056px
+                                                )
+                                                rotate(0.77deg) rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 174px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(34px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/Liar%20Game/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/Liar%20Game/cover-260.webp 1x,
+                                                /assets/Books/Liar%20Game/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Liar%20Game/cover-260.webp"
+                                            data-srcset="/assets/Books/Liar%20Game/cover-260.webp 1x, /assets/Books/Liar%20Game/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="174"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 174px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(34px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 174px;
+                                                height: 260px;
+                                                transform: translateZ(34px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 34px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/Liar%20Game/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/Liar%20Game/spine-260.webp 1x,
+                                                /assets/Books/Liar%20Game/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/Liar%20Game/spine-260.webp"
+                                            data-srcset="/assets/Books/Liar%20Game/spine-260.webp 1x, /assets/Books/Liar%20Game/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="34"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 34px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    class="book manga"
+                                    data-tilt="1.5"
+                                    data-cover-width="190"
+                                    data-spine-width="23"
+                                    data-book-url="/book/i-am-a-hero"
+                                    data-book-status="finished"
+                                    style="
+                                        position: relative;
+                                        flex-shrink: 0;
+                                        width: 27.760620102963856px;
+                                        height: 260px;
+                                        z-index: 1;
+                                    "
+                                    data-astro-cid-j7pv25f6
+                                >
+                                    <div
+                                        class="book-inner"
+                                        style="
+                                            position: relative;
+                                            width: 190px;
+                                            height: 260px;
+                                            transform-style: preserve-3d;
+                                            transform-origin: right center;
+                                            transform: translateX(
+                                                    -164.6216209785295px
+                                                )
+                                                rotate(1.0499999999999998deg)
+                                                rotateY(-90deg);
+                                        "
+                                        data-astro-cid-j7pv25f6
+                                    >
+                                        <div
+                                            class="book-preview-cover-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 190px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform: translateZ(23px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-cover dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-cover"
+                                            decoding="async"
+                                            src="/assets/Books/I%20am%20a%20Hero/cover-260.webp"
+                                            srcset="
+                                                /assets/Books/I%20am%20a%20Hero/cover-260.webp 1x,
+                                                /assets/Books/I%20am%20a%20Hero/cover-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/I%20am%20a%20Hero/cover-260.webp"
+                                            data-srcset="/assets/Books/I%20am%20a%20Hero/cover-260.webp 1x, /assets/Books/I%20am%20a%20Hero/cover-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="190"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 190px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform: translateZ(23px);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                        <div
+                                            class="book-elements dark"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 190px;
+                                                height: 260px;
+                                                transform: translateZ(23px);
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        ></div>
+                                        <div
+                                            class="book-preview-spine-shell"
+                                            aria-hidden="true"
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 23px;
+                                                height: 260px;
+                                                overflow: hidden;
+                                                pointer-events: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        >
+                                            <div
+                                                class="book-preview-spine dark"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                            <div
+                                                class="book-preview-shimmer"
+                                                data-astro-cid-j7pv25f6
+                                            ></div>
+                                        </div>
+                                        <img
+                                            class="book-spine"
+                                            decoding="async"
+                                            src="/assets/Books/I%20am%20a%20Hero/spine-260.webp"
+                                            srcset="
+                                                /assets/Books/I%20am%20a%20Hero/spine-260.webp 1x,
+                                                /assets/Books/I%20am%20a%20Hero/spine-520.webp 2x
+                                            "
+                                            data-src="/assets/Books/I%20am%20a%20Hero/spine-260.webp"
+                                            data-srcset="/assets/Books/I%20am%20a%20Hero/spine-260.webp 1x, /assets/Books/I%20am%20a%20Hero/spine-520.webp 2x"
+                                            fetchpriority="low"
+                                            loading="lazy"
+                                            width="23"
+                                            height="260"
+                                            alt=""
+                                            style="
+                                                position: absolute;
+                                                top: 0;
+                                                right: 0;
+                                                width: 23px;
+                                                height: 260px;
+                                                max-width: none;
+                                                transform-origin: right center;
+                                                transform: rotateY(90deg);
+                                                backface-visibility: hidden;
+                                                -webkit-backface-visibility: hidden;
+                                            "
+                                            data-astro-cid-j7pv25f6
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Elsewhere Section -->
+                <div class="elsewhere" data-astro-cid-j7pv25f6>
+                    <p class="title-section" data-astro-cid-j7pv25f6>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="scripts/jquery.style-my-tooltips.js"></script>
-    <script src="scripts/time.js"></script>
+                    </p>
+                    <p class="body-text" data-astro-cid-j7pv25f6>
+                        More coming, vermis/realtnzm, <a href="sitemap.html">sitemap</a>. Established 2026
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop" id="backdrop" data-astro-cid-j7pv25f6></div>
+        <div
+            class="tooltip-layer"
+            id="shared-tooltip"
+            role="tooltip"
+            aria-hidden="true"
+            data-astro-cid-j7pv25f6
+        >
+            <span
+                class="tooltip-pill body-text-small"
+                id="shared-tooltip-pill"
+                data-astro-cid-j7pv25f6
+            ></span>
+        </div>
+        <div
+            class="experiment-tooltip-layer"
+            id="experiment-tooltip"
+            role="tooltip"
+            aria-hidden="true"
+            data-astro-cid-j7pv25f6
+        >
+            <span
+                class="experiment-tooltip-image is-active"
+                data-experiment-tooltip-current
+                aria-hidden="true"
+                data-astro-cid-j7pv25f6
+            ></span>
+            <span
+                class="experiment-tooltip-image"
+                data-experiment-tooltip-next
+                aria-hidden="true"
+                data-astro-cid-j7pv25f6
+            ></span>
+        </div>
+        <div
+            class="toast-layer"
+            id="copy-toast"
+            aria-hidden="true"
+            data-astro-cid-j7pv25f6
+        >
+            <div
+                class="tooltip-pill body-text-small"
+                id="copy-toast-pill"
+                data-astro-cid-j7pv25f6
+            ></div>
+        </div>
+        <script
+            type="module"
+            src="/_astro/Layout.astro_astro_type_script_index_0_lang.7u9AZ_cn.js"
+        ></script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    const registerWorker = () => {
+                        navigator.serviceWorker
+                            .register("/sw.js", {
+                                updateViaCache: "none",
+                            })
+                            .catch(() => {});
+                    };
+                    if ("requestIdleCallback" in window) {
+                        window.requestIdleCallback(registerWorker, {
+                            timeout: 2000,
+                        });
+                    } else {
+                        window.setTimeout(registerWorker, 1);
+                    }
+                });
+            }
+        </script>
+        <script>
+            (() => {
+                const root = document.documentElement;
+                let clearHoverResetTimer = 0;
 
-    <link
-        rel="stylesheet"
-        href="https://first-sound.moe/divaring/divaring.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://file.garden/ZrZSgsrYfQXsO7QH/ww/webmasterwebring.css"
-    />
-</head>
-<body>
-    <header>
-        <h1>Bookshelf</h1>
-    </header>
-    <nav class="main">
-        <a href="index.html">index</a>
-        <a href="about.html">about</a>
-        <a href="blog.html">blog</a>
-        <a href="gallery.html">gallery</a>
-        <a href="#" class="currentpage">bookshelf</a>
-        <a href="links.html">links</a>
-    </nav>
-</body>
+                const isSectionNavEvent = (event) => {
+                    const target = event.target;
+                    if (!(target instanceof Element)) return false;
+
+                    return Boolean(
+                        target.closest(
+                            "[data-artifact-side-nav], [data-book-side-nav]",
+                        ),
+                    );
+                };
+                const resetStickyHover = (event) => {
+                    if (isSectionNavEvent(event)) return;
+
+                    window.dispatchEvent(
+                        new CustomEvent("grizz-scroll-reset-hover"),
+                    );
+                    root.classList.add("is-scroll-resetting-hover");
+
+                    if (clearHoverResetTimer) {
+                        window.clearTimeout(clearHoverResetTimer);
+                    }
+
+                    clearHoverResetTimer = window.setTimeout(() => {
+                        root.classList.remove("is-scroll-resetting-hover");
+                        clearHoverResetTimer = 0;
+                    }, 180);
+                };
+                window.addEventListener("wheel", resetStickyHover, {
+                    capture: true,
+                    passive: true,
+                });
+                window.addEventListener("touchmove", resetStickyHover, {
+                    capture: true,
+                    passive: true,
+                });
+            })();
+        </script>
+        <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+            integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+            data-cf-beacon='{"version":"2024.11.0","token":"f788d8f49d2140ed8f4d7227d0075ef9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
+<script
+    type="module"
+    src="/_astro/index.astro_astro_type_script_index_0_lang.CPSRq4ct.js"
+></script>
